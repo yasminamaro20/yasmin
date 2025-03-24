@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav main sidebar"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  header {
+    grid-area: header;
+    background-color: #00AEEF;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+  }
+
+.pesquisa{
+    text-align: end;
+    font-size: 30px;
+  gap: 20px;
+}
+  
+
+
+
+
+  nav {
+    grid-area: nav;
+    background-color: #00E676;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  main {
+    background-color: #D81B60;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  span{
+    display: block;
+    
+  }
+  aside {
+    grid-area: sidebar;
+    background-color: #00E676;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: #00AEEF;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 60px;
+    margin: 0 10px;
+  }
+
+ .icon-container{
+   text-align: left;
+    display: flex;
+    flex-direction: column;
+   
+    gap: 10px;
+ }
+  
